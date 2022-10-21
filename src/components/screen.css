@@ -105,4 +105,82 @@
 }
 
 @media (min-width: 576px) {
+  .screen-card-container {
+    width: 500px;
+    height: 500px;
+  }
+
+  .screen-login-name {
+    padding: 40px 0 20px 0;
+  }
+
+  .screen-login-name h1 {
+    font-size: 32px;
+  }
+
+  .screen-login-name p {
+    font-size: 18px;
+  }
+
+  .screen-input-container input {
+    height: 60px;
+    margin: 10px 20px;
+  }
+
+  .screen-input-container button {
+    height: 60px;
+    margin: 10px 20px;
+  }
+
+  .screen-input-container p {
+    margin: 0 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .screen-card-container {
+    width: 550px;
+    height: 500px;
+  }
+
+  .screen-login-name h1 {
+    font-size: 36px;
+  }
+
+  .screen-login-name p {
+    font-size: 19px;
+  }
+
+  .screen-input-container input {
+    height: 65px;
+    margin: 10px 20px;
+  }
+
+  .screen-input-container button {
+    height: 65px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .screen-card-container {
+    width: 550px;
+    height: 500px;
+  }
+
+  .screen-login-name h1 {
+    font-size: 38px;
+  }
+
+  .screen-login-name p {
+    font-size: 20px;
+  }
+
+  .screen-input-container input {
+    height: 70px;
+    margin: 10px 20px;
+  }
+
+  .screen-input-container button {
+    height: 70px;
+  }
 }
