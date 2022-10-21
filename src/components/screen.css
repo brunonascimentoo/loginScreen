@@ -1,0 +1,108 @@
+.screen-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  z-index: 1;
+}
+
+.screen-card-container {
+  width: 400px;
+  height: 400px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.screen-login-name {
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 0 10px 0;
+}
+
+.screen-login-name h1 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  letter-spacing: -0.2px;
+}
+
+.screen-login-name p {
+  font-size: 15px;
+  font-weight: 700;
+  color: #ccc;
+  letter-spacing: -0.2px;
+}
+
+.screen-input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.screen-input-container input {
+  margin: 10px;
+  padding-left: 10px;
+  border-radius: 4px;
+  border: 0;
+  outline: 0;
+  height: 50px;
+}
+
+.screen-input-container input:focus {
+  border: 1px solid #407bff;
+}
+.screen-input-container input::placeholder {
+  color: #ccc;
+  padding: 2px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.screen-input-container button {
+  margin: 10px;
+  height: 50px;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  text-transform: capitalize;
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(23, 86, 163, 1) 40%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.screen-input-container button:focus {
+  outline: 1px solid #407bff;
+}
+.screen-input-container button:hover {
+  background: linear-gradient(
+    90deg,
+    rgb(4, 1, 65) 0%,
+    rgb(26, 100, 190) 40%,
+    rgb(25, 217, 255) 100%
+  );
+}
+
+.screen-input-container a {
+  text-decoration: none;
+}
+
+.screen-input-container p {
+  margin: 10px;
+  color: #407bff;
+  font-size: 12px;
+}
+
+@media (min-width: 576px) {
+}
