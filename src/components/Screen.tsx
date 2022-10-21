@@ -8,7 +8,7 @@ export function Screen() {
         <div className="screen-card-container">
           <div className="screen-login-name">
             <h1>Login</h1>
-            <p>enter yuor credentials</p>
+            <p>Enter yuor credentials</p>
           </div>
 
           <div className="screen-input-container">
