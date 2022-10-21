@@ -16,9 +16,16 @@
 ## Como ver o projeto ?
 
 - Clonar o repositório com git clone
+
+```bash
+
+git clone https://github.com/brunonascimentoo/loginScreen.git
+
+```
+
 - Abrir a pasta do projeto no seu editor de código
-- Executar o comando npm install ou npm i, isso irá baixar as dependencias do projeto.
-- Após baixadas as dependencias só executar o comando npm run dev
+- Executar o comando 'npm install' ou 'npm i', isso irá baixar as dependências do projeto.
+- Após baixar as dependências só executar o comando npm run dev
 
 ### Observação, você precisa ter o node instalado!!!
 
