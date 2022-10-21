@@ -12,7 +12,7 @@
 .screen-card-container {
   width: 400px;
   height: 400px;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 1);
   display: flex;
@@ -34,7 +34,7 @@
 .screen-login-name p {
   font-size: 15px;
   font-weight: 700;
-  color: #ccc;
+  color: #b9b9b9;
   letter-spacing: -0.2px;
 }
 
@@ -51,16 +51,18 @@
   margin: 10px;
   padding-left: 10px;
   border-radius: 4px;
-  border: 0;
+  border: 1px solid rgb(179, 177, 177);
   outline: 0;
   height: 50px;
 }
 
 .screen-input-container input:focus {
-  border: 1px solid #407bff;
+  border: 2px solid transparent;
+  animation: colorHamony 2s infinite linear;
+  outline: 1px solid #407bff;
 }
 .screen-input-container input::placeholder {
-  color: #ccc;
+  color: #b9b9b9;
   padding: 2px;
   font-size: 12px;
   font-weight: 700;
@@ -95,6 +97,8 @@
     rgb(26, 100, 190) 40%,
     rgb(25, 217, 255) 100%
   );
+  border: 2px solid transparent;
+  animation: colorHamonyButton 2s infinite linear;
 }
 
 .screen-input-container a {
@@ -105,6 +109,125 @@
   margin: 10px;
   color: #407bff;
   font-size: 12px;
+}
+
+@keyframes colorHamony {
+  0% {
+    border-image-source: linear-gradient(
+      0deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(23, 86, 163, 1) 40%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    border-width: 2px;
+    border-image-slice: 1;
+    border-radius: 4px;
+  }
+
+  25% {
+    border-image-source: linear-gradient(
+      90deg,
+      rgb(8, 4, 73) 0%,
+      rgb(14, 63, 122) 40%,
+      rgb(42, 219, 255) 100%
+    );
+    border-width: 2px;
+    border-image-slice: 1;
+    border-radius: 4px;
+  }
+
+  50% {
+    border-image-source: linear-gradient(
+      180deg,
+      rgb(14, 8, 107) 0%,
+      rgb(12, 49, 95) 40%,
+      rgb(28, 217, 255) 100%
+    );
+    border-width: 2px;
+    border-image-slice: 1;
+    border-radius: 4px;
+  }
+
+  75% {
+    border-image-source: linear-gradient(
+      270deg,
+      rgb(4, 2, 36) 0%,
+      rgb(12, 49, 95) 40%,
+      rgb(28, 217, 255) 100%
+    );
+    border-width: 2px;
+    border-image-slice: 1;
+    border-radius: 4px;
+  }
+
+  100% {
+    border-image-source: linear-gradient(
+      360deg,
+      rgb(9, 3, 97) 0%,
+      rgb(45, 102, 172) 40%,
+      rgb(96, 244, 255) 100%
+    );
+    border-width: 2px;
+    border-image-slice: 1;
+    border-radius: 4px;
+  }
+}
+
+@keyframes colorHamonyButton {
+  0% {
+    border-image-source: linear-gradient(
+      0deg,
+      rgb(0, 0, 0) 0%,
+      rgb(18, 66, 124) 40%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    border-width: 2px;
+    border-image-slice: 1;
+  }
+
+  25% {
+    border-image-source: linear-gradient(
+      90deg,
+      rgb(4, 3, 36) 0%,
+      rgb(11, 47, 92) 40%,
+      rgb(85, 227, 255) 100%
+    );
+    border-width: 2px;
+    border-image-slice: 1;
+  }
+
+  50% {
+    border-image-source: linear-gradient(
+      180deg,
+      rgb(13, 7, 100) 0%,
+      rgb(16, 66, 128) 40%,
+      rgb(28, 217, 255) 100%
+    );
+    border-width: 2px;
+    border-image-slice: 1;
+  }
+
+  75% {
+    border-image-source: linear-gradient(
+      270deg,
+      rgb(4, 2, 36) 0%,
+      rgb(12, 49, 95) 40%,
+      rgb(28, 217, 255) 100%
+    );
+    border-width: 2px;
+    border-image-slice: 1;
+  }
+
+  100% {
+    border-image-source: linear-gradient(
+      360deg,
+      rgb(9, 3, 97) 0%,
+      rgb(45, 102, 172) 40%,
+      rgb(96, 244, 255) 100%
+    );
+    border-width: 2px;
+    border-image-slice: 1;
+  }
 }
 
 @media (min-width: 576px) {
